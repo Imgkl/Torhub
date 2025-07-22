@@ -56,6 +56,7 @@ export function TorrentListItem({ torrent, index }: TorrentListItemProps) {
       actions={
         <ActionPanel>
           <Action.Open title="Open Magnet URL" target={torrent.magnetUrl} icon={Icon.Download} />
+          <Action.CopyToClipboard title="Copy Magnet URL" content={torrent.magnetUrl} />
         </ActionPanel>
       }
     />
